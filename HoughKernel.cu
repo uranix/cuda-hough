@@ -64,7 +64,7 @@ __global__ void hough_transform_kernel(int width, int height, int *image, int ld
 {
 	int n = height + width - 1;
 
-	const float pi = 3.14159265358929f;
+	const float pi = 3.14159265358979f;
 
 	for (int ia = anglelo; ia < anglehi; ia++) {
 		float alpha = ia * pi / (2 * angles) - pi / 4;
